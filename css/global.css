@@ -1,0 +1,45 @@
+  html{
+    font-size: 100%;
+  }
+  body{
+    background-color: white ;
+    font-size: 1rem;
+    margin: 0px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+
+  }
+  @media (max-width:768px){
+    body{
+      font-size: 1.125rem;
+    }
+  }
+  *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  /* Estiliza o contêiner da scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px; /* Largura para barras verticais */
+    height: 8px; /* Altura para barras horizontais */
+  }
+
+  /* Estiliza o trilho (track) */
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Cinza claro */
+  }
+
+  /* Estiliza o polegar da barra de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+  /* Efeito de hover no polegar */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }

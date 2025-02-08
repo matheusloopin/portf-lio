@@ -1,0 +1,26 @@
+.sobre{
+  background: linear-gradient(#6C0ACE, #8F66FF);
+  height: 50px;
+}
+.conteiner-sobre{
+  overflow: hidden;
+  max-width: 800px;
+  padding: 0 20px;
+  margin: 100px auto 0px auto;
+}
+.conteiner-sobre h1{
+  font-size: 2.5rem;
+  margin-bottom: 46px;
+  font-family: "Tomorrow";
+  font-weight: 600;
+  color: #213454;
+}
+.conteiner-sobre p{
+  max-width: 100%;
+  letter-spacing: 0.4px;
+  line-height: 25px;
+  font-family: "Tomorrow";
+}
+.conteiner-sobre p span{
+  color: #8F66FF;
+}

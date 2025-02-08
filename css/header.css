@@ -1,0 +1,162 @@
+/* Configurações Gerais */
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  background-color: #6c7a89; /* Cor de fundo principal */
+}
+
+/* Cabeçalho */
+.conteiner-header {
+  display: flex;
+  max-width: 1309px;
+  margin: 20px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Nome e Bloco */
+.conteiner-nome {
+  display: flex;
+  align-items: center;
+}
+
+.bloco {
+  width: 20px;
+  height: 20px;
+  background-color: #0A598E;
+}
+
+.titulo-nome {
+  font-family: "Tomorrow", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 20px;
+  color: #19224F;
+  letter-spacing: 1.5px;
+}
+
+.conteiner-nome span {
+  font-weight: 300;
+}
+
+/* Menu Responsivo */
+#menu {
+  position: relative;
+  z-index: 10;
+}
+
+#menu-bar {
+  width: 45px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  z-index: 11; /* Para sobrepor o fundo circular */
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #FFFFFF;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+/* Fundo Circular */
+.menu-bg {
+  position: fixed; /* Garantir que fique dentro da viewport */
+  top: 50%; /* Centralizar verticalmente */
+  left: 50%; /* Centralizar horizontalmente */
+  transform: translate(-50%, -50%); /* Ajustar o posicionamento */
+  width: 0;
+  height: 0;
+  background: #DC052D;
+  border-radius: 50%;
+  transition: width 0.5s ease, height 0.5s ease;
+  z-index: 1;
+  overflow: hidden; /* Evitar que conteúdo extra seja exibido */
+}
+
+/* Navegação */
+.nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px; /* Tamanho fixo do menu */
+  background-color: transparent; /* Transparente, pois o fundo circular cobre */
+  z-index: 10;
+  padding-top: 150px;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  margin: 20px 0;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.nav li a {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  font-weight: bold;
+}
+
+/* Transições e Animações */
+.change #bar1 {
+  transform: translateY(4px) rotate(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotate(45deg);
+}
+
+.change-bg {
+  width: 150vw; /* Ajuste para expandir mais controlado */
+  height: 150vw;
+}
+
+.change {
+  display: block;
+}
+
+/* Ativação do Menu */
+.nav.change {
+  display: block;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .menu-bg {
+    width: 0;
+    height: 0;
+  }
+
+  .nav {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+  }
+}

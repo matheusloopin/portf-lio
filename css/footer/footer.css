@@ -1,0 +1,19 @@
+footer{
+  background: linear-gradient(#7b00f6, #8F66FF);
+  height: auto;
+}
+.conteiner-footer{
+  max-width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.conteiner-footer > p{
+  font-size: 0.8rem;
+  padding-bottom: 10px;
+  font-family: "Roboto";
+  color: white;
+}

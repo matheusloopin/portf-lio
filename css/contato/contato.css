@@ -1,0 +1,43 @@
+.contato{
+  background: linear-gradient(#6C0ACE, #8F66FF);
+  height: auto;
+}
+.conteiner-contato{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.conteiner-contato h1{
+text-align: start;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 20px;
+font-family: "Roboto";
+color: white;
+}
+.informacoes span{
+  display: inline-block;
+  width: 20px;
+  margin-right: 15px;
+}
+.informacoes span img{
+  max-width: 100%;
+}
+.informacoes p{
+  padding-bottom: 15px;
+  font-family: "Tomorrow";
+  color: white;
+}
+.informacoes p:nth-child(2){
+  padding-bottom: 30px;
+}
+
+@media (min-width: 320px){
+  .informacoes p{
+    padding-left: 20px;
+    font-size: 1rem;
+  }
+}
+.ct-largura{
+  max-width: 500px;
+  margin: 0 0 0 30px;
+}
